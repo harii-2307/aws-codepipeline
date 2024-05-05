@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Build started on date
+      - mkdir -p /usr/share/nginx/html   
+      - cp -r * /usr/share/nginx/html    
+      - echo Build completed on date
+artifacts:
+  files:
+    - '/*'
