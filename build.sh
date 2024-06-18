@@ -2,8 +2,8 @@
 
 echo "Build started on $(date)"
 ls -la
-mkdir -p /usr/share/nginx/html
-cp -r * /usr/share/nginx/html
-echo "Files in /usr/share/nginx/html after copy :"
-ls -la /usr/share/nginx/html
+mkdir -p dist
+cp -r * dist
+echo "Files in dist after copy:"
+ls -la dist
 echo "Build completed on $(date)"
