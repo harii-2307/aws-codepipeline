@@ -2,21 +2,21 @@
 This repository contains the code and configuration for deploying my portfolio to an EC2 instance using AWS services. The deployment pipeline utilizes AWS CodeCommit, CodeBuild, CodeDeploy, and CodePipeline. Monitoring is handled with Grafana, Prometheus, Amazon CloudWatch and SNS for alerts.
 
 # Features
-Continuous Integration/Continuous Deployment (CI/CD): Automated deployment using AWS CodePipeline, CodeCommit, CodeBuild, and CodeDeploy.
-Monitoring: Integrated monitoring with Grafana and Prometheus for performance metrics.
-Load Balancing: Used AWS Load Balancers to route traffic and manage load.
-Alerts: Configured Amazon SNS, SMS messages, and CloudWatch alarms for proactive alerting and notifications.
+- Continuous Integration/Continuous Deployment (CI/CD): Automated deployment using AWS CodePipeline, CodeCommit, CodeBuild, and CodeDeploy.
+- Monitoring: Integrated monitoring with Grafana and Prometheus for performance metrics.
+- Load Balancing: Used AWS Load Balancers to route traffic and manage load.
+- Alerts: Configured Amazon SNS, SMS messages, and CloudWatch alarms for proactive alerting and notifications.
 
 
 # Architecture
-AWS CodeCommit: Source code repository.
-AWS CodeBuild: Build and package application.
-AWS CodeDeploy: Deploy application to EC2 instance.
-AWS CodePipeline: Orchestrates the deployment process.
-EC2 Instance: Hosts the deployed portfolio.
-Grafana and Prometheus: Monitoring and visualization.
-AWS Load Balancers: Distribute incoming traffic and manage load.
-Amazon SNS and CloudWatch: Alerts and notifications for system health.
+1) AWS CodeCommit: Source code repository.
+2) AWS CodeBuild: Build and package application.
+3) AWS CodeDeploy: Deploy application to EC2 instance.
+4) AWS CodePipeline: Orchestrates the deployment process.
+5) EC2 Instance: Hosts the deployed portfolio.
+6) Grafana and Prometheus: Monitoring and visualization.
+7) AWS Load Balancers: Distribute incoming traffic and manage load.
+8) Amazon SNS and CloudWatch: Alerts and notifications for system health.
 
 
 # Getting Started
