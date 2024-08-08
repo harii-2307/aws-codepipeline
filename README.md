@@ -1,5 +1,5 @@
 # Overview
-This repository contains the code and configuration for deploying my portfolio to an EC2 instance using AWS services. The deployment pipeline utilizes AWS CodeCommit, CodeBuild, CodeDeploy, and CodePipeline. Monitoring is handled with Grafana, Prometheus, Amazon CloudWatch, and SNS for alerts.
+This repository contains the code and configuration for deploying my portfolio to an EC2 instance using AWS services. The deployment pipeline utilizes AWS CodeCommit, CodeBuild, CodeDeploy, and CodePipeline. Monitoring is handled with Grafana, Prometheus, Amazon CloudWatch and SNS for alerts.
 
 # Features
 Continuous Integration/Continuous Deployment (CI/CD): Automated deployment using AWS CodePipeline, CodeCommit, CodeBuild, and CodeDeploy.
