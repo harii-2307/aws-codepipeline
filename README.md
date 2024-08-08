@@ -1,19 +1,52 @@
-# aws-codepipeline
-Have deployed my portfolio to EC2 instance, gaining handson on few basic aws services.
+#Overview
+This repository contains the code and configuration for deploying my portfolio to an EC2 instance using AWS services. The deployment pipeline utilizes AWS CodeCommit, CodeBuild, CodeDeploy, and CodePipeline. Monitoring is handled with Grafana, Prometheus, Amazon CloudWatch, and SNS for alerts.
+
+#Features
+Continuous Integration/Continuous Deployment (CI/CD): Automated deployment using AWS CodePipeline, CodeCommit, CodeBuild, and CodeDeploy.
+Monitoring: Integrated monitoring with Grafana and Prometheus for performance metrics.
+Load Balancing: Used AWS Load Balancers to route traffic and manage load.
+Alerts: Configured Amazon SNS, SMS messages, and CloudWatch alarms for proactive alerting and notifications.
 
 
-# AWS-Enabled Portfolio Application Deployment
+#Architecture
+AWS CodeCommit: Source code repository.
+AWS CodeBuild: Build and package application.
+AWS CodeDeploy: Deploy application to EC2 instance.
+AWS CodePipeline: Orchestrates the deployment process.
+EC2 Instance: Hosts the deployed portfolio.
+Grafana and Prometheus: Monitoring and visualization.
+AWS Load Balancers: Distribute incoming traffic and manage load.
+Amazon SNS and CloudWatch: Alerts and notifications for system health.
 
-This project showcases the deployment of my portfolio using AWS services including CodeCommit, CodeBuild, CodeDeploy and EC2.
 
-## Overview
+#Getting Started
+Prerequisites : 
+AWS Account 
+Basic understanding of AWS services (EC2,  Security groups, CodeCommit, CodeBuild, CodeDeploy, CodePipeline, CloudWatch, SNS)
+Grafana and Prometheus setup
 
-I have gained handson on few aws basic services like code commit, code build, code deploy and code pipeline.
+#Setup Instructions
 
-## Features
+1. Clone the repo
+2. Configure AWS Services
+     Set up CodeCommit repository
+     Create CodeBuild project
+     Configure CodeDeploy application and deployment group
+     Create a CodePipeline to connect CodeCommit, CodeBuild, and CodeDeploy
+     Set up EC2 instance and install nginx and code deploy agent.
+3. Deploy the Application
+     Commit your code to CodeCommit
+     CodePipeline will automatically trigger the build and deployment process
+     Access Your Portfolio
+4. Monitoring Configuration
+     Deploy Grafana and Prometheus for monitoring
+     Configure Grafana dashboards and Prometheus metrics
+     Set up CloudWatch alarms and SNS notifications
 
-- **AWS Services Integration:** Utilizes CodeCommit for version control, CodeBuild for automated build processes, and CodeDeploy for seamless deployment.
-- **EC2 Hosting:** The application is hosted on an EC2 instance, providing scalability and flexibility in resource management.
-- **CI/CD Pipeline:** A robust CI/CD pipeline automates the build, test, and deployment processes, enabling rapid iterations and updates.
+Reference : https://docs.google.com/document/d/1yJAHgRLjK9W3aMeT-n1zaoxZd2970mctqR7qGjS0Q28/edit  
 
-This application can be accessed by http://15.206.28.52/ 
+#Production Links 
+Deployed Instance [portfolio] can be accessed at http://43.204.185.70/ 
+Prometheus: Access Prometheus metrics at http://43.204.185.70/:9090
+Grafana: Access Grafana dashboards at http://3.110.0.182:3000/login [ use admin for username and password] 
+Cloudwatch and SNS alarms and alerts can be viewed in AWS console. 
