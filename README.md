@@ -1,14 +1,14 @@
-#Overview
+# Overview
 This repository contains the code and configuration for deploying my portfolio to an EC2 instance using AWS services. The deployment pipeline utilizes AWS CodeCommit, CodeBuild, CodeDeploy, and CodePipeline. Monitoring is handled with Grafana, Prometheus, Amazon CloudWatch, and SNS for alerts.
 
-#Features
+# Features
 Continuous Integration/Continuous Deployment (CI/CD): Automated deployment using AWS CodePipeline, CodeCommit, CodeBuild, and CodeDeploy.
 Monitoring: Integrated monitoring with Grafana and Prometheus for performance metrics.
 Load Balancing: Used AWS Load Balancers to route traffic and manage load.
 Alerts: Configured Amazon SNS, SMS messages, and CloudWatch alarms for proactive alerting and notifications.
 
 
-#Architecture
+# Architecture
 AWS CodeCommit: Source code repository.
 AWS CodeBuild: Build and package application.
 AWS CodeDeploy: Deploy application to EC2 instance.
@@ -19,13 +19,13 @@ AWS Load Balancers: Distribute incoming traffic and manage load.
 Amazon SNS and CloudWatch: Alerts and notifications for system health.
 
 
-#Getting Started
+# Getting Started
 Prerequisites : 
 AWS Account 
 Basic understanding of AWS services (EC2,  Security groups, CodeCommit, CodeBuild, CodeDeploy, CodePipeline, CloudWatch, SNS)
 Grafana and Prometheus setup
 
-#Setup Instructions
+# Setup Instructions
 
 1. Clone the repo
 2. Configure AWS Services
@@ -45,8 +45,8 @@ Grafana and Prometheus setup
 
 Reference : https://docs.google.com/document/d/1yJAHgRLjK9W3aMeT-n1zaoxZd2970mctqR7qGjS0Q28/edit  
 
-#Production Links 
-Deployed Instance [portfolio] can be accessed at http://43.204.185.70/ 
-Prometheus: Access Prometheus metrics at http://43.204.185.70/:9090
-Grafana: Access Grafana dashboards at http://3.110.0.182:3000/login [ use admin for username and password] 
-Cloudwatch and SNS alarms and alerts can be viewed in AWS console. 
+# Production Links 
+1. Deployed Instance [portfolio] can be accessed at http://43.204.185.70/ 
+2. Prometheus: Access Prometheus metrics at http://43.204.185.70/:9090
+3. Grafana: Access Grafana dashboards at http://3.110.0.182:3000/login [ use admin for username and password] 
+4. Cloudwatch and SNS alarms and alerts can be viewed in AWS console. 
